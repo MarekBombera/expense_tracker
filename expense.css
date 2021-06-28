@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+/* Hides step arrows in input type=number */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+/**/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	flex-direction: column;
+}
+
+h1 {
+	color: #009879;
+	padding-bottom: 10px;
+}
+
+#input-container {
+	display: flex;
+	justify-content: center;
+}
+
+#expense-name-input,
+#expense-date-input,
+#expense-amount-input {
+	margin: 5px;
+	padding: 3px;
+}
+
+#add-button-container {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+#expense-add-button {
+	padding: 5px 15px;
+	border-radius: 30px;
+	outline: none;
+}
+
+#table-container {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+table,
+th {
+	text-align: left;
+	border-collapse: collapse;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+	font-family: Quicksand;
+}
+
+td {
+	max-width: 150px;
+	overflow-wrap: break-word;
+}
+
+#thead {
+	background-color: #009879;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+#table th,
+#table td {
+	padding: 12px 15px;
+}
+
+#table tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+#table tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+#table tr:last-of-type {
+	border-bottom: 2px solid #009879;
+}
